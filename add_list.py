@@ -1,0 +1,20 @@
+username = input('Введите имя пользователя: ')
+title1 = input('Введите первый заголовок заметки: ')
+title2 = input('Введите второй заголовок заметки: ')
+title3 = input('Введите третий заголовок заметки: ')
+content = input('Введите описание заметки: ')
+status = input('Введите статус заметки: ')
+created_date = input('Введите дату создания заметки в формате "дд-мм-гггг": ')
+issue_date = input('Введите дату истечения заметки в формате "дд-мм-гггг": ')
+
+title_list = []
+title_list.append(title1)
+title_list.append(title2)
+title_list.append(title3)
+
+print(f"Имя пользователя: {username}.")
+print(f"Заголовоки заметок: {title_list}.")
+print(f"Описание заметки: {content}.")
+print(f"Статус заметки: {status}.")
+print(f"Дата создания заметки: {created_date[:5]}.")
+print(f"Дата истечения заметки: {issue_date[:5]}.")
