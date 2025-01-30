@@ -22,4 +22,10 @@ status = note['status']
 
 print(f"Текущий статус заметки:{status}.")
 
-status = input()
+status = input('Введите новый статус: ')
+
+if status in status_options:
+    print('Статус заметки успешно обновлен!')
+    print(f'Текущий статус: {status}.')
+else:
+    print('Вы ввели неверный статус')
